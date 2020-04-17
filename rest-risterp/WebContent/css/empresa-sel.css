@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.empresas-usuarios {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#empresas-sel-cabec-logo img {
+    height: 40px;
+}
+
+div#empresas-sel-cabec-inf {
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1.283em;
+    background: rgba(0, 220, 58, 0.17);
+    width: 100%;
+    color: rgba(1, 185, 50, 0.97);
+}
+
+div#empresas-sel {
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+#empresas-sel tr {
+    cursor: pointer;
+}

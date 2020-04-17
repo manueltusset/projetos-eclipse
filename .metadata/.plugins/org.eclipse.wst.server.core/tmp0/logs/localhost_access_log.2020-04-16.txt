@@ -1,0 +1,11 @@
+127.0.0.1 - - [16/Apr/2020:08:15:38 -0300] "GET / HTTP/1.1" 404 706
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/ HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/css/empresa-sel.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/css/grid.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/css/estilos.css HTTP/1.1" 200 2171
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/js/functions.js HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/js/grid.js HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/js/parceiros.js HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/icons/menu.png HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/img/rist_erp_verde.png HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2020:08:15:47 -0300] "GET /rest-risterp/img/rist_erp.png HTTP/1.1" 304 -

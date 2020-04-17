@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="id"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="id"/>
+			<item value="function salvar"/>
+			<item value="VIRTUAL FM"/>
+			<item value="ID"/>
+			<item value="montaGridJA"/>
+			<item value="consultarTodas"/>
+			<item value="15%"/>
+			<item value="pessoa"/>
+			<item value="sucesso"/>
+			<item value="function sal"/>
+			<item value="function popu"/>
+			<item value="usuár"/>
+			<item value="raz"/>
+			<item value="dia in"/>
+			<item value="in"/>
+		</list>
+		<list key="replacehistory">
+			<item value="parceiros"/>
+			<item value="parceiro "/>
+			<item value="Parceiro parceiro"/>
+			<item value="parceiroDAO"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1288"/>
+		<item key="DIALOG_Y_ORIGIN" value="379"/>
+		<item key="DIALOG_WIDTH" value="348"/>
+		<item key="DIALOG_HEIGHT" value="440"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+</section>

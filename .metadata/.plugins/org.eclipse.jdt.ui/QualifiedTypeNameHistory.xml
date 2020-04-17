@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="br.com.virtualfm.dao.ParceiroDAO"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="br.com.virtualfm.entidade.Parceiro"/>
+<fullyQualifiedTypeName name="br.com.virtualfm.util.Util"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="br.com.risterp.dao.UsuarioDAO"/>
+<fullyQualifiedTypeName name="br.com.risterp.entidade.Usuario"/>
+<fullyQualifiedTypeName name="br.com.risterp.util.Util"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="br.com.risterp.entidade.Usuarios_Empresas"/>
+<fullyQualifiedTypeName name="br.com.risterp.dao.Usuarios_EmpresasDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>
