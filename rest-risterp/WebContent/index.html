@@ -18,6 +18,13 @@
 <script src="js/functions.js"></script>
 <script src="js/grid.js"></script>
 <script src="js/parceiros.js"></script>
+<script>
+	window.onload = function() {
+		setTimeout(function() {
+			criaGrid_Parceiros();
+		}, 300);
+	}
+</script>
 <body>
 	<div id="painel_login">
 		<div class="center_login">
@@ -36,7 +43,8 @@
 					</tr>
 					<tr>
 						<td>
-							<button class="button-login" onclick="acessarSistema();">Acessar Sistema</button>
+							<button class="button-login" onclick="acessarSistema();">Acessar
+								Sistema</button>
 						</td>
 					</tr>
 				</tbody>
@@ -67,6 +75,99 @@
 		</div>
 		<div class="telas-sistemas">
 			<div id="dv-parceiros">
+				<div id="painel-tabelas">
+					<div id="botoes-tabelas">
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-incluir"
+								onclick="incluir();" title="Incluir">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-edit"
+								onclick="editar();" title="Editar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-save"
+								onclick="salvar();" title="Salvar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-cancel"
+								onclick="cancelar();" title="Cancelar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-delete"
+								onclick="deletar();" title="Deletar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-search"
+								onclick="pesquisar();" title="Pesquisar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-print"
+								onclick="imprimir();" title="Imprimir Todos">
+						</div>
+					</div>
+					<div id="campos-tabelas">
+						<form id="frm0">
+							<div class="dvInputs">
+								<label>Codigo</label>
+								<div style="clear: both"></div>
+								<input id="id" class="input-integer" disabled="disabled"
+									readonly="readonly">
+							</div>
+							<div class="dvInputs">
+								<label>Razao Social</label>
+								<div style="clear: both"></div>
+								<input id="razao_social" class="input-varchar"
+									disabled="disabled" readonly="readonly">
+							</div>
+							<div style="clear: both"></div>
+							<div class="dvInputs">
+								<label>CNPJ/CPF</label>
+								<div style="clear: both"></div>
+								<input id="cnpj" style="width: 120px;" class="input-varchar"
+									disabled="disabled" readonly="readonly">
+							</div>
+							<div class="dvInputs">
+								<label>Valor Contratado</label>
+								<div style="clear: both"></div>
+								<input type="number" style="width: 90px;" id="valor_contratado"
+									class="input-integer" disabled="disabled" readonly="readonly">
+							</div>
+							<div class="dvInputs">
+								<label>Vencimento</label>
+								<div style="clear: both"></div>
+								<input type="date" id="vencimento" class="input-integer"
+									disabled="disabled" readonly="readonly">
+							</div>
+							<div class="dvInputs">
+								<label>Dia Inicio</label>
+								<div style="clear: both"></div>
+								<input type="date" id="dia_inicio" class="input-integer"
+									disabled="disabled" readonly="readonly">
+							</div>
+							<div class="dvInputs">
+								<label>Ultimo Pagamento</label>
+								<div style="clear: both"></div>
+								<input type="date" id="ultimo_pagamento" class="input-integer"
+									disabled="disabled" readonly="readonly">
+							</div>
+							<div style="clear: both"></div>
+							<div class="dvInputs">
+								<label>E-Mail</label>
+								<div style="clear: both"></div>
+								<input id="email" class="input-varchar" disabled="disabled"
+									readonly="readonly">
+							</div>
+							<div class="dvInputs">
+								<label>Telefone</label>
+								<div style="clear: both"></div>
+								<input id="telefone" style="width: 130px;" class="input-varchar"
+									disabled="disabled" readonly="readonly">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="countGrid">Nenhum registro selecionado!</div>
 				<div id="dvGrid" style="display: none"></div>
 			</div>
 			<div id="dv-financas" style="display: none">
@@ -86,20 +187,20 @@
 			<span id="name-user-info"></span>
 		</div>
 	</div>
-	<div id="empresas_usuarios" class="empresas-usuarios" style="display:none">
+	<div id="empresas_usuarios" class="empresas-usuarios"
+		style="display: none">
 		<div style="width: 80%;">
 			<div id="empresas-sel-cabec">
 				<div id="empresas-sel-cabec-logo">
 					<img src="img/rist_erp_verde.png">
 				</div>
 				<div id="empresas-sel-cabec-inf">
-					<div style="padding: 5px;">Seja Bem-Vindo(a)! Selecione uma empresa para continuar!</div>
+					<div style="padding: 5px;">Seja Bem-Vindo(a)! Selecione uma
+						empresa para continuar!</div>
 				</div>
 			</div>
 			<div style="clear: both;"></div>
-			<div id="empresas-sel">
-				
-			</div>
+			<div id="empresas-sel"></div>
 		</div>
 	</div>
 </body>

@@ -6,8 +6,13 @@ table {
 }
 
 #dvGrid {
-	width: 100%;
-	overflow: auto;
+    width: 100%;
+    overflow-y: auto;
+    /* min-height: 38%; */
+    max-height: 300px;
+    /* position: absolute; */
+    /* bottom: 21px; */
+    border-top: 1px solid #e0e0e0;
 }
 
 table thead tr th {
@@ -50,4 +55,15 @@ table tbody tr.trSelected {
 table tbody tr td input[type="checkbox"] {
 	width: 16px;
 	height: 16px;
+}
+
+div#countGrid {
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1.180em;
+    background: rgba(0, 220, 58, 0.17);
+    width: 100%;
+    color: rgba(1, 185, 50, 0.97);
+    padding: 5px;
+    border: 1px solid #e0e0e0;
 }

@@ -1,8 +1,8 @@
 function criaGrid_Parceiros() {
 	var cabecalho = [];
 	cabecalho.push({
-		'name' : 'id',
-		'label' : 'Código',
+		'name' : 'cparceiro',
+		'label' : 'Cód. Parceiro',
 		'type' : 'INTEGER'
 	});
 	cabecalho.push({

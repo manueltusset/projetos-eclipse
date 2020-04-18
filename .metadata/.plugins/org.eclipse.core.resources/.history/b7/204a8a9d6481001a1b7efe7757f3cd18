@@ -1,0 +1,115 @@
+function sel(obj) {
+	var trs = obj.parentNode.querySelectorAll('tr');
+
+	trs.forEach(function(tr) {
+		var inpt = tr.querySelectorAll('input[type="checkbox"]')[0];
+		if (tr.getAttribute('class') === 'trSelected' && !inpt.checked) {
+			tr.removeAttribute('class');
+			inpt.checked = false;
+		} else if (inpt.checked) {
+			tr.setAttribute('class', 'trSelected');
+			inpt.checked = true;
+		}
+	});
+}
+
+function selAll(obj) {
+	var trs = obj.parentNode.parentNode.querySelectorAll('tbody tr');
+	var inpt = obj.querySelectorAll('input[type="checkbox"]')[0];
+
+	trs.forEach(function(tr) {
+		if (inpt.checked) {
+			tr.setAttribute('class', 'trSelected');
+			tr.querySelectorAll('input[type="checkbox"]')[0].checked = true;
+		} else {
+			tr.removeAttribute('class');
+			tr.querySelectorAll('input[type="checkbox"]')[0].checked = false;
+		}
+	});
+}
+
+function criaGrid(cabecalho, dados, destino) {
+	if (!cabecalho || !cabecalho.forEach)
+		return alert('Parâmetro cabeçalho deve ser um array');
+
+	if (!dados)
+		return alert('Parâmetro dados não informado');
+
+	try {
+		dados = JSON.parse(dados);
+	} catch (ex) {
+		return alert('Parâmetro dados não é uma string de json valido');
+	}
+
+	if (!destino)
+		return alert('Destino não informado para a grid');
+
+	var html = [];
+	html.push('<div id="countGrid">Nenhum registro selecionado! :(</div>');
+	html.push('<table cellspacing="0" cellpadding="0">');
+	html.push('<thead>');
+	html.push('<tr onclick="selAll(this);">');
+	html.push('<th><input type="checkbox" id="check-all"></th>');
+	cabecalho.forEach(function(cabec) {
+		html.push('<th>' + cabec.label + '</th>')
+	});
+	html.push('</tr>');
+	html.push('</thead>');
+	html.push('<tbody>');
+
+	dados.forEach(function(jj) {
+		html.push('<tr onclick="sel(this);">');
+		html.push('<td><input type="checkbox" id="check"></td>');
+		cabecalho.forEach(function(cabec) {
+			html.push('<td nomeColuna="'+cabec.name+'">' + formatar(cabec.type, jj[cabec.name]) + '</td>');
+		});
+		html.push('</tr>');
+	});
+
+	html.push('</tbody>');
+	html.push('</table>');
+
+	destino.innerHTML = html.join('');
+}
+
+function formatar(tipo, valor) {
+	switch (tipo) {
+	case 'NUMERIC':
+		return formataValor(valor);
+	case 'CNPJ':
+		return formatCnpjCpf(valor);
+	case 'DATE':
+		return formatarDataInput(valor);
+	default:
+		return valor;
+	}
+}
+
+function formatarDataInput(data) {
+	if (!data)
+		return '';
+
+	return data.split('T')[0].split('-')[2] + '/'
+			+ data.split('T')[0].split('-')[1] + '/'
+			+ data.split('T')[0].split('-')[0];
+}
+
+function formatCnpjCpf(value) {
+	const cnpjCpf = value.replace(/\D/g, '');
+
+	if (cnpjCpf.length === 11) {
+		return cnpjCpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,
+				"\$1.\$2.\$3-\$4");
+	}
+
+	return cnpjCpf.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g,
+			"\$1.\$2.\$3/\$4-\$5");
+}
+
+function formataValor(valor) {
+	valor = parseFloat(valor);
+	var valorFormatado2 = valor.toLocaleString('pt-BR', {
+		minimumFractionDigits : 2
+	});
+	return valorFormatado2.replace('.', '').replace(',', '.');
+}

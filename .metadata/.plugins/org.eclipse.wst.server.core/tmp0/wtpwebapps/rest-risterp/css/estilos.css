@@ -144,11 +144,118 @@ td input {
     font-size: 12px;
 }
 
-#dvGrid {
-    width: 100%;
-    overflow: auto;
-    height: 35%;
-    position: absolute;
-    bottom: 21px;
-    border-top: 1px solid #e0e0e0;
+div#botoes-tabelas {
+    background: linear-gradient(to bottom, #eeeeee 0%, #d7d7d7 100%);
+    height: 32px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 7px;
+    border: 1px solid silver;
+}
+
+div#painel_virtual{
+	height: 100%;
+}
+
+.telas-sistemas {
+    height: calc(100% - 118px);
+}
+
+div#painel-tabelas {
+    height: calc(100% - 340px);
+}
+
+div#campos-tabelas {
+    height: calc(100% - 62px);
+    overflow-y: auto;
+    margin: 6px;
+    padding: 4px;
+    border-radius: 7px;
+    border: 1px solid silver;
+}
+
+label {
+    font-size: 13px;
+}
+
+form input {
+    border-radius: 4px;
+    border: 1px solid silver;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.input-integer {
+    height: 10px;
+    width: 145px;
+}
+
+.dvInputs {
+    float: left;
+    padding: 5px;
+}
+
+.input-varchar {
+    height: 10px;
+    width: 400px;
+}
+
+div#dv-parceiros {
+    height: 100%;
+}
+
+.div-botoes {
+    border: 1px solid silver;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+    background: #efefef;
+}
+
+.div-botoes:hover {
+    background: #44a35d;
+    border: 1px solid #44a35d;
+    filter: opacity(0.7);
+}
+
+input.button-padrao {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    height: 17px;
+    background-size: cover;
+    width: 17px;
+    cursor: pointer;
+}
+
+input.btn-incluir {
+    background-image: url("/rest-risterp/icons/add.png");
+}
+
+input.btn-edit {
+    background-image: url("/rest-risterp/icons/edit.png");
+}
+
+input.btn-save {
+    background-image: url("/rest-risterp/icons/save.png");
+}
+
+input.btn-cancel {
+    background-image: url("/rest-risterp/icons/cancel.png");
+}
+
+input.btn-delete {
+    background-image: url("/rest-risterp/icons/delete.png");
+}
+
+input.btn-search {
+    background-image: url("/rest-risterp/icons/search.png");
+}
+
+input.btn-print {
+    background-image: url("/rest-risterp/icons/print.png");
 }

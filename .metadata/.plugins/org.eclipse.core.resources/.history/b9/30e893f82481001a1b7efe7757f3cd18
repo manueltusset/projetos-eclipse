@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+html{
+	height:100%;
+}
+
+body {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 0.87);
+	margin: 0;
+	font-size: 0.875rem;
+	height:100%;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: #F4F4F4;
+}
+
+*::-webkit-scrollbar {
+	width: 6px;
+	background: #F4F4F4;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: #dad7d7;
+}
+
+.barra-sistema {
+	height: 55px;
+	background: #44a35d;
+}
+
+.dv-logo-sistema img {
+	height: 45px;
+	margin: 5px;
+}
+
+.dv-menu-sistema {
+	float: left
+}
+
+.dv-menu-sistema img {
+	height: 35px;
+	margin: 9px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.barra-negocios-sistema {
+	width: 100%;
+	height: 33px;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.aba-negocio {
+	float: left;
+	padding: 6px;
+	padding-left: 40px;
+	text-align: center;
+	padding-right: 40px;
+	font-weight: 500;
+	font-size: 1.183em;
+	margin-top: -1px;
+}
+
+.aba-negocio:hover {
+	cursor: pointer;
+}
+
+.aba-selecionada {
+	background: #44a35d;
+	color: white;
+}
+
+.barra-info {
+    position: absolute;
+    height: 14px;
+    background: #44a35d;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 3px;
+    font-weight: 400;
+    color: white;
+    font-size: 13px;
+}
+
+#painel_login {
+	width: 100%;
+	height: 100%;
+	/*margin-top: 250px;*/
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#painel_login table tr td {
+	background: white;
+	border: none;
+	text-align: center;
+}
+
+#painel_login table {
+	background: white;
+	border: none;
+	text-align: center;
+}
+
+.center_login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+input.input-varchar-login {
+	height: 30px;
+	font-size: 15px;
+	width: 280px;
+}
+
+button.button-login {
+	width: 290px;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	background: #4cbb69;
+	color: white;
+	font-size: 16px;
+}
+
+button.button-login:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+td input {
+    border-radius: 4px;
+    border: 1px solid silver;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#dvGrid {
+    width: 100%;
+    overflow: auto;
+    height: 35%;
+    position: absolute;
+    bottom: 21px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.div-botoes {
+    border: 1px solid silver;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+    background: #efefef;
+}
+
+input.button-padrao {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    height: 21px;
+    background-size: cover;
+    width: 21px;
+    cursor: pointer;
+}
+
+input.btn-incluir {
+    background-image: url("/rest-risterp/icons/add.png");
+}
+
+input.btn-edit {
+    background-image: url("/rest-risterp/icons/edit.png");
+}
+
+input.btn-save {
+    background-image: url("/rest-risterp/icons/save.png");
+}
+
+input.btn-cancel {
+    background-image: url("/rest-risterp/icons/cancel.png");
+}
+
+input.btn-delete {
+    background-image: url("/rest-risterp/icons/delete.png");
+}
+
+input.btn-search {
+    background-image: url("/rest-risterp/icons/search.png");
+}
+
+input.btn-print {
+    background-image: url("/rest-risterp/icons/print.png");
+}

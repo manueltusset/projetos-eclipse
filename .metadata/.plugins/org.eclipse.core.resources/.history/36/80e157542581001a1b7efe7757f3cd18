@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="ISO-8859-1">
+<meta property="og:image" content="img/rist_erp.png">
+<title>RIST erp</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link rel="stylesheet" type="text/css" href="css/empresa-sel.css">
+<link rel="shortcut icon" href="icons/rist_erp_verde_ico.ico"
+	type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<script src="js/functions.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/parceiros.js"></script>
+<body>
+	<div id="painel_login">
+		<div class="center_login">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="img/rist_erp_verde.png" style="height: 65px;"></td>
+					</tr>
+					<tr>
+						<td><input id="usuario_login" class="input-varchar-login"
+							placeholder="Usuario"></td>
+					</tr>
+					<tr>
+						<td><input id="usuario_senha" type="password"
+							class="input-varchar-login" placeholder="Senha"></td>
+					</tr>
+					<tr>
+						<td>
+							<button class="button-login" onclick="acessarSistema();">Acessar
+								Sistema</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="painel_virtual" class="div-sistema" style="display: none">
+		<div class="barra-sistema">
+			<div class="dv-menu-sistema">
+				<img src="icons/menu.png" title="Abrir/Fechar Menus">
+			</div>
+			<div class="dv-logo-sistema">
+				<img src="img/rist_erp.png">
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="barra-negocios-sistema">
+			<div onclick="selAba(this);" class="aba-negocio aba-selecionada"
+				id="parceiros" ref="dv-parceiros">Gestão de Parceiros</div>
+			<div onclick="selAba(this);" class="aba-negocio" id="financas"
+				ref="dv-financas">Finanças</div>
+			<div onclick="selAba(this);" class="aba-negocio" id="faturamento"
+				ref="dv-faturamento">Faturamento</div>
+			<div onclick="selAba(this);" class="aba-negocio" id="recebimento"
+				ref="dv-recebimento">Recebimento</div>
+			<div onclick="selAba(this);" class="aba-negocio" id="expedicao"
+				ref="dv-expedicao">Expedição</div>
+		</div>
+		<div class="telas-sistemas">
+			<div id="dv-parceiros">
+				<div id="painel-tabelas">
+					<div id="botoes-tabelas">
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-incluir" onclick="incluir();" title="Incluir">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-edit" onclick="editar();" title="Editar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-save" onclick="salvar();" title="Salvar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-cancel" onclick="cancelar();" title="Cancelar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-delete" onclick="deletar();" title="Deletar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-search" onclick="pesquisar();" title="Pesquisar">
+						</div>
+						<div class="div-botoes" style="">
+							<input type="button" class="button-padrao btn-print" onclick="imprimir();" title="">
+						</div>
+					</div>
+					<div id="campos-tabelas"></div>
+				</div>
+				<div id="dvGrid" style="display: none"></div>
+			</div>
+			<div id="dv-financas" style="display: none">
+				<div id="dvGrid" style="display: none"></div>
+			</div>
+			<div id="dv-faturamento" style="display: none">
+				<div id="dvGrid" style="display: none"></div>
+			</div>
+			<div id="dv-recebimento" style="display: none">
+				<div id="dvGrid" style="display: none"></div>
+			</div>
+			<div id="dv-expedicao" style="display: none">
+				<div id="dvGrid" style="display: none"></div>
+			</div>
+		</div>
+		<div class="barra-info">
+			<span id="name-user-info"></span>
+		</div>
+	</div>
+	<div id="empresas_usuarios" class="empresas-usuarios"
+		style="display: none">
+		<div style="width: 80%;">
+			<div id="empresas-sel-cabec">
+				<div id="empresas-sel-cabec-logo">
+					<img src="img/rist_erp_verde.png">
+				</div>
+				<div id="empresas-sel-cabec-inf">
+					<div style="padding: 5px;">Seja Bem-Vindo(a)! Selecione uma empresa para continuar!</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<div id="empresas-sel"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -11,6 +11,7 @@ function sel(obj) {
 			inpt.checked = true;
 		}
 	});
+	contarSel();
 }
 
 function selAll(obj) {
@@ -26,6 +27,23 @@ function selAll(obj) {
 			tr.querySelectorAll('input[type="checkbox"]')[0].checked = false;
 		}
 	});
+
+	contarSel();
+}
+
+function contarSel(obj) {
+	var trs = document.querySelectorAll('#dvGrid tbody tr');
+	var count = 0;
+	trs.forEach(function(tr) {
+		if (tr.querySelectorAll('input[type="checkbox"]')[0].checked)
+			count++;
+	});
+
+	if (count <= 0)
+		document.querySelector('#countGrid').innerText = 'Nenhum registro selecionado!';
+	else
+		document.querySelector('#countGrid').innerText = '' + count
+				+ ' registro(s) selecionado(s)!';
 }
 
 function criaGrid(cabecalho, dados, destino) {
@@ -60,7 +78,8 @@ function criaGrid(cabecalho, dados, destino) {
 		html.push('<tr onclick="sel(this);">');
 		html.push('<td><input type="checkbox" id="check"></td>');
 		cabecalho.forEach(function(cabec) {
-			html.push('<td>' + formatar(cabec.type, jj[cabec.name]) + '</td>');
+			html.push('<td nomeColuna="' + cabec.name + '">'
+					+ formatar(cabec.type, jj[cabec.name]) + '</td>');
 		});
 		html.push('</tr>');
 	});
