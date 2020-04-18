@@ -1230,3 +1230,7 @@ java.io.FileNotFoundException: /home/manueltusset/eclipse-workspace/.metadata/.p
 2020-04-18 11:31:10,348 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/main/resources
 2020-04-18 11:31:10,351 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-04-18 11:31:10,352 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/test/resources
+2020-04-18 15:24:05,060 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-18 15:24:05,062 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/main/resources
+2020-04-18 15:24:05,064 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-18 15:24:05,080 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/test/resources

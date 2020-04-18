@@ -39,6 +39,7 @@ function contarSel(obj) {
 			count++;
 	});
 
+	/*debugger;*/
 	if (count <= 0)
 		document.querySelector('#countGrid').innerText = 'Nenhum registro selecionado!';
 	else
