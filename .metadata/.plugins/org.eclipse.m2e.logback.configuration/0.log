@@ -1225,3 +1225,8 @@ java.io.FileNotFoundException: /home/manueltusset/eclipse-workspace/.metadata/.p
 2020-04-18 08:23:36,743 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/main/resources
 2020-04-18 08:23:36,744 [Worker-119: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-04-18 08:23:36,744 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/test/resources
+2020-04-18 11:31:08,271 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-04-18 11:31:10,346 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-18 11:31:10,348 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/main/resources
+2020-04-18 11:31:10,351 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-18 11:31:10,352 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/manueltusset/eclipse-workspace/rest-risterp/src/test/resources
